@@ -31,10 +31,16 @@ Your solution must:
 - Generate one prediction row for every request in `dataset/deletion_requests.csv`
 - Write the final predictions to `output.csv` in the repository root
 
-Run the starter Python entry point with:
+Run the auditor from the repository root. It reads `dataset/` and writes `output.csv` next to this file. No packages are required beyond Python 3.
 
 ```bash
 python3 code/main.py
+```
+
+Compare that logic with the public sample before using the full file:
+
+```bash
+python3 code/evaluation/check_sample.py
 ```
 
 The blank template at `dataset/output.csv` is provided as a reference. Your final generated file for submission must be the root-level `output.csv`.
